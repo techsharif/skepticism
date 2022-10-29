@@ -23,5 +23,8 @@
   "devDependencies": {
     "@skpm/builder": "^0.8.0"
   },
-  "author": "bye-sharif <sharif.chowdhury@bkash.com>"
+  "author": "bye-sharif <sharif.chowdhury@bkash.com>",
+  "dependencies": {
+    "sketch-module-web-view": "^3.5.1"
+  }
 }

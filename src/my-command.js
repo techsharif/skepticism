@@ -1,6 +1,11 @@
-import sketch from 'sketch'
-// documentation: https://developer.sketchapp.com/reference/api/
+import BrowserWindow from 'sketch-module-web-view'
 
 export default function () {
-  sketch.UI.message("It's alive 🙌")
+  const options = {
+    identifier: 'unique.id',
+  }
+
+  const browserWindow = new BrowserWindow(options)
+
+  browserWindow.loadURL(require('./my-screen.html'))
 }
