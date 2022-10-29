@@ -9,9 +9,9 @@
     }
   ],
   "menu": {
-    "title": "skepticism",
+    "isRoot": true,
     "items": [
-      "skepticism.my-command-identifier"
+      "main"
     ]
   }
 }

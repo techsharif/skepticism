@@ -18,13 +18,21 @@
     "build": "skpm-build",
     "watch": "skpm-build --watch",
     "start": "skpm-build --watch --run",
+    "start:once": "skpm-build --run",
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
     "@skpm/builder": "^0.8.0"
   },
-  "author": "bye-sharif <sharif.chowdhury@bkash.com>",
+  "resources": [
+    "resources/**/*.js"
+  ],
+  "author": "techsharif <sharif.cse.hstu@gmail.com>",
   "dependencies": {
-    "sketch-module-web-view": "^3.5.1"
+    "chroma-js": "^2.4.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-sketchapp": "^3.2.6",
+    "react-test-renderer": "^18.2.0"
   }
 }
