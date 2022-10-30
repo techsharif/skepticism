@@ -3,9 +3,9 @@
   "icon": "icon.png",
   "commands": [
     {
-      "name": "my-command",
-      "identifier": "skepticism.my-command-identifier",
-      "script": "./my-command.js"
+      "name": "Home",
+      "identifier": "main",
+      "script": "./main.js"
     }
   ],
   "menu": {
