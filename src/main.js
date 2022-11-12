@@ -1,6 +1,7 @@
 import BrowserWindow from 'sketch-module-web-view'
 import { getWebview } from 'sketch-module-web-view/remote'
 import UI from 'sketch/ui'
+import handlerRoute from './handler-route'
 
 const webviewIdentifier = 'skepticism.webview'
 
@@ -27,13 +28,7 @@ export default function () {
         UI.message('UI loaded!')
     })
 
-    // add a handler for a call from web content's javascript
-    webContents.on('nativeLog', s => {
-        UI.message(s)
-        webContents
-            .executeJavaScript(`setRandomNumber(${Math.random()})`)
-            .catch(console.error)
-    })
+    handlerRoute(webContents)
 
     browserWindow.loadURL(require('../resources/webview.html'))
 }
