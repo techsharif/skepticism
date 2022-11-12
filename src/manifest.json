@@ -4,7 +4,7 @@
   "commands": [
     {
       "name": "Home",
-      "identifier": "my-plugin.my-command-identifier",
+      "identifier": "skepticism.my-command-identifier",
       "script": "./main.js",
       "handlers": {
         "run": "onRun",
@@ -15,9 +15,9 @@
     }
   ],
   "menu": {
-    "title": "my-plugin",
+    "title": "skepticism",
     "items": [
-      "my-plugin.my-command-identifier"
+      "skepticism.my-command-identifier"
     ]
   }
 }
