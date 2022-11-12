@@ -1,17 +1,23 @@
 {
-  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
-  "icon": "icon.png",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
   "commands": [
     {
       "name": "Home",
-      "identifier": "main",
-      "script": "./main.js"
+      "identifier": "my-plugin.my-command-identifier",
+      "script": "./main.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
     }
   ],
   "menu": {
-    "isRoot": true,
+    "title": "my-plugin",
     "items": [
-      "main"
+      "my-plugin.my-command-identifier"
     ]
   }
 }
