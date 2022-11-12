@@ -23,6 +23,7 @@ export default function () {
 
     // print a message when the page loads
     webContents.on('did-finish-load', () => {
+        console.log("ok")
         UI.message('UI loaded!')
     })
 
